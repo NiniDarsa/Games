@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Game1 from "./Game1"
 import Game2 from "./Game2"
 import { Link, Route, Routes } from "react-router-dom"
+import Game3 from "./Game3"
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
       <Routes>
        <Route path="/" element={<Game1/>}/>
        <Route path="/game2" element={<Game2/>}/>
+       <Route path="/game3" element={<Game3/>}/>
       </Routes>
       <StyledBtnContainer>
        <button ><Link to="/">Game N1</Link></button>
        <button ><Link to="/game2">Game N2</Link></button>
+       <button ><Link to="/game3">Game N3</Link></button>
       </StyledBtnContainer>
     </StyledApp>
   )
